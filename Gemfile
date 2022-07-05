@@ -75,10 +75,10 @@ git "https://github.com/solidusio/solidus.git", branch: 'master' do
   gem 'solidus_api'
   gem 'solidus_backend'
   gem 'solidus_core'
-  gem 'solidus_frontend'
   gem 'solidus_sample'
 end
 
+gem 'solidus_frontend', github: 'solidusio/solidus_frontend', branch: 'master'
 
 gem "solidus_auth_devise"
 gem "solidus_paypal_commerce_platform"
