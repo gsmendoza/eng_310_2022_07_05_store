@@ -71,6 +71,14 @@ group :test do
   gem "webdrivers"
 end
 
-gem 'solidus', github: 'solidusio/solidus', branch: 'master'
+git "https://github.com/solidusio/solidus.git", branch: 'master' do
+  gem 'solidus_api'
+  gem 'solidus_backend'
+  gem 'solidus_core'
+  gem 'solidus_frontend'
+  gem 'solidus_sample'
+end
+
+
 gem "solidus_auth_devise"
 gem "solidus_paypal_commerce_platform"
